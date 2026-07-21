@@ -1,0 +1,11 @@
+.git
+.gitignore
+.venv
+.pytest_cache
+.test-tmp-*
+__pycache__
+*.py[cod]
+*.db
+support_notifications.jsonl
+tests
+docs/examples/mock_slack_requests_sample.jsonl

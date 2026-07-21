@@ -1,0 +1,136 @@
+{
+    "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+    "status": "succeeded",
+    "source_uri": "file:///c:/Users/Manasa%20Puellela/Downloads/fde-take-home/fde-take-home/monthly_account_status.parquet",
+    "month": "2026-01-01",
+    "dry_run": false,
+    "counts": {
+        "rows_scanned": 2551,
+        "duplicates_found": 82,
+        "alerts_sent": 1,
+        "skipped_replay": 136,
+        "failed_deliveries": 4
+    },
+    "sample_alerts": [
+        {
+            "id": 142,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00012",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "amer-risk-alerts",
+            "status": "skipped_replay",
+            "reason": "already_sent",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:02.763586"
+        },
+        {
+            "id": 143,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00019",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "amer-risk-alerts",
+            "status": "skipped_replay",
+            "reason": "already_sent",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:02.774058"
+        },
+        {
+            "id": 144,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00022",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "apac-risk-alerts",
+            "status": "skipped_replay",
+            "reason": "already_sent",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:02.783315"
+        },
+        {
+            "id": 145,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00035",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "apac-risk-alerts",
+            "status": "skipped_replay",
+            "reason": "already_sent",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:02.793256"
+        },
+        {
+            "id": 146,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00048",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "apac-risk-alerts",
+            "status": "skipped_replay",
+            "reason": "already_sent",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:02.803377"
+        }
+    ],
+    "sample_errors": [
+        {
+            "id": 152,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00090",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:02.875849"
+        },
+        {
+            "id": 237,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00559",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:03.833594"
+        },
+        {
+            "id": 242,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00593",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:03.895792"
+        },
+        {
+            "id": 274,
+            "run_id": "e2485663-19a2-4919-b1ad-95c8c5676a82",
+            "account_id": "a00769",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:25:04.233668"
+        }
+    ],
+    "error": null
+}
