@@ -1,0 +1,149 @@
+{
+    "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+    "status": "succeeded",
+    "source_uri": "file:///data/monthly_account_status.parquet",
+    "month": "2026-01-01",
+    "dry_run": false,
+    "counts": {
+        "rows_scanned": 2551,
+        "duplicates_found": 82,
+        "alerts_sent": 136,
+        "skipped_replay": 0,
+        "failed_deliveries": 5
+    },
+    "sample_alerts": [
+        {
+            "id": 1,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00012",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "amer-risk-alerts",
+            "status": "sent",
+            "reason": null,
+            "sent_at": "2026-07-21T01:21:16.623027",
+            "error": null,
+            "updated_at": "2026-07-21T01:21:16.632918"
+        },
+        {
+            "id": 2,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00019",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "amer-risk-alerts",
+            "status": "sent",
+            "reason": null,
+            "sent_at": "2026-07-21T01:21:16.669025",
+            "error": null,
+            "updated_at": "2026-07-21T01:21:16.678839"
+        },
+        {
+            "id": 3,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00022",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "apac-risk-alerts",
+            "status": "sent",
+            "reason": null,
+            "sent_at": "2026-07-21T01:21:16.730620",
+            "error": null,
+            "updated_at": "2026-07-21T01:21:16.740874"
+        },
+        {
+            "id": 4,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00035",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "apac-risk-alerts",
+            "status": "sent",
+            "reason": null,
+            "sent_at": "2026-07-21T01:21:16.793075",
+            "error": null,
+            "updated_at": "2026-07-21T01:21:16.802547"
+        },
+        {
+            "id": 5,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00048",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "apac-risk-alerts",
+            "status": "sent",
+            "reason": null,
+            "sent_at": "2026-07-21T01:21:16.838555",
+            "error": null,
+            "updated_at": "2026-07-21T01:21:16.848585"
+        }
+    ],
+    "sample_errors": [
+        {
+            "id": 11,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00090",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:21:19.730104"
+        },
+        {
+            "id": 33,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00209",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": "emea-risk-alerts",
+            "status": "failed",
+            "reason": null,
+            "sent_at": null,
+            "error": "HTTP 429: mock slack: rate limited",
+            "updated_at": "2026-07-21T01:21:44.940363"
+        },
+        {
+            "id": 96,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00559",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:22:55.873384"
+        },
+        {
+            "id": 101,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00593",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:23:02.100672"
+        },
+        {
+            "id": 133,
+            "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
+            "account_id": "a00769",
+            "month": "2026-01-01",
+            "alert_type": "at_risk",
+            "channel": null,
+            "status": "failed",
+            "reason": "unknown_region",
+            "sent_at": null,
+            "error": null,
+            "updated_at": "2026-07-21T01:23:27.252310"
+        }
+    ],
+    "error": null
+}

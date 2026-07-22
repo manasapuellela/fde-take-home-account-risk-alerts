@@ -50,7 +50,7 @@ reruns safe. See `docs/architecture.md` for the component and sequence diagrams.
    ```
 
 Captured response examples, including a replay, are available in
-`docs/examples/` and bundled in `../example-outputs.zip`.
+`docs/examples/` and bundled in `../example-outputs/`.
 
 ## Configuration
 
