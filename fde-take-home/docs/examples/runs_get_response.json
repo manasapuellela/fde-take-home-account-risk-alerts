@@ -1,7 +1,7 @@
 {
     "run_id": "5a45b8a1-bf23-4926-b1bc-d318ff9c1a5b",
     "status": "succeeded",
-    "source_uri": "file:///c:/Users/Manasa%20Puellela/Downloads/fde-take-home/fde-take-home/monthly_account_status.parquet",
+    "source_uri": "file:///data/monthly_account_status.parquet",
     "month": "2026-01-01",
     "dry_run": false,
     "counts": {

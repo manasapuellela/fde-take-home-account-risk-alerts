@@ -49,7 +49,8 @@ reruns safe. See `docs/architecture.md` for the component and sequence diagrams.
    curl http://localhost:8000/runs/<run_id>
    ```
 
-Captured response examples, including a replay, are in `docs/examples/`.
+Captured response examples, including a replay, are available in
+`docs/examples/` and bundled in `../example-outputs.zip`.
 
 ## Configuration
 
@@ -163,7 +164,14 @@ of the run.
 - `GET /runs/{run_id}` — returns status, counts, and sample alerts/errors.
 
 For dry runs, `alerts_sent` represents alerts that would be sent, not actual
-network deliveries.
+network deliveries; alert entries likewise use `status: "sent"` with
+`reason: "dry_run"` to preserve the run-count schema. No Slack delivery or
+alert-outcome persistence occurs. A future API revision could rename these to
+`alerts_previewed` and `would_send` to make that distinction explicit.
+
+Run status describes orchestration: `succeeded` means input processing and the
+batch workflow completed. Account-level Slack or routing failures are isolated,
+reported in `failed_deliveries`, and do not fail the whole run.
 
 ## Tests
 

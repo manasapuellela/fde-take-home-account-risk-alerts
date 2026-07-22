@@ -22,10 +22,11 @@ def route_channel(account_region: Optional[str], region_channel_map: Dict[str, s
 
 def format_alert_message(alert: RiskAlert, details_base_url: str) -> dict:
     renewal = alert.renewal_date.isoformat() if alert.renewal_date else "Unknown"
+    duration_unit = "month" if alert.duration_months == 1 else "months"
     lines = [
         f"\U0001F6A9 At Risk: {alert.account_name} ({alert.account_id})",
         f"Region: {alert.account_region or 'Unknown'}",
-        f"At Risk for: {alert.duration_months} months (since {alert.risk_start_month.isoformat()})",
+        f"At Risk for: {alert.duration_months} {duration_unit} (since {alert.risk_start_month.isoformat()})",
         f"ARR: {alert.arr}",
         f"Renewal date: {renewal}",
     ]

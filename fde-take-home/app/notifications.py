@@ -36,7 +36,7 @@ def send_unknown_region_summary(
     record = {
         "to": support_email,
         "subject": f"Risk alert routing failure: unknown region ({month_str})",
-        "sent_at": datetime.now(timezone.utc).isoformat(),
+        "recorded_at": datetime.now(timezone.utc).isoformat(),
         "run_id": run_id,
         "month": month_str,
         "accounts": [

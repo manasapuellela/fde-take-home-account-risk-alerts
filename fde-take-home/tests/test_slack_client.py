@@ -75,6 +75,15 @@ def test_format_alert_message_handles_missing_renewal_and_owner():
     assert "Owner" not in payload["text"]
 
 
+def test_format_alert_message_uses_singular_month():
+    payload = slack_client.format_alert_message(
+        _alert(duration_months=1, risk_start_month=date(2026, 1, 1)),
+        "https://app.yourcompany.com/accounts",
+    )
+    assert "At Risk for: 1 month (since 2026-01-01)" in payload["text"]
+    assert "1 months" not in payload["text"]
+
+
 def test_send_alert_retries_on_429_then_succeeds(monkeypatch):
     calls = []
 
